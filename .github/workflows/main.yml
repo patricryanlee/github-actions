@@ -19,6 +19,12 @@ jobs:
           dotnet restore
           dotnet outdated --version-lock Major --upgrade *.sln
         shell: bash
+      - name: echo "Commit changes"
+        run: |
+          git checkout update-package
+          git add .
+          git commit -m "Update package"
+        shell: bash
       - run: echo "Creating PR"
       - name: create pull request
         run: gh pr create -B main -H update-package --title 'Merge update-package into main' --body 'Created by Github action'
