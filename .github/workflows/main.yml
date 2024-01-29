@@ -21,6 +21,8 @@ jobs:
         shell: bash
       - name: echo "Commit changes"
         run: |
+          git config --global user.email "trywithactions@github.com"
+          git config --global user.name "Trying Actions"
           git checkout -b update-package
           git add .
           git commit -m "Update package"
