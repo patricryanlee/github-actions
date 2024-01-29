@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     "net7.0": {
-      "Microsoft.AspNetCore.JsonPatch/6.0.20": {
+      "Microsoft.AspNetCore.JsonPatch/6.0.26": {
         "type": "package",
         "dependencies": {
           "Microsoft.CSharp": "4.7.0",
@@ -19,10 +19,10 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Mvc.NewtonsoftJson/6.0.20": {
+      "Microsoft.AspNetCore.Mvc.NewtonsoftJson/6.0.26": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.JsonPatch": "6.0.20",
+          "Microsoft.AspNetCore.JsonPatch": "6.0.26",
           "Newtonsoft.Json": "13.0.1",
           "Newtonsoft.Json.Bson": "1.0.2"
         },
@@ -81,10 +81,10 @@
     }
   },
   "libraries": {
-    "Microsoft.AspNetCore.JsonPatch/6.0.20": {
-      "sha512": "63KSV6vQGw4/yJgZoDj5T0clJrncLFKqyDUz5gFqg7vjvTW90ufkS72tOtPTMdPEDWy8jYDZYnbSxOEh4R7kUg==",
+    "Microsoft.AspNetCore.JsonPatch/6.0.26": {
+      "sha512": "XdsPAPBf+kakVljTVRVfqyuGA4J1nuUffIqo6mlGzzdIUR8SWZJ2yOLCylh9IiAvH/oemhkA5EEhlnXU4dMxmw==",
       "type": "package",
-      "path": "microsoft.aspnetcore.jsonpatch/6.0.20",
+      "path": "microsoft.aspnetcore.jsonpatch/6.0.26",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -96,14 +96,14 @@
         "lib/net6.0/Microsoft.AspNetCore.JsonPatch.xml",
         "lib/netstandard2.0/Microsoft.AspNetCore.JsonPatch.dll",
         "lib/netstandard2.0/Microsoft.AspNetCore.JsonPatch.xml",
-        "microsoft.aspnetcore.jsonpatch.6.0.20.nupkg.sha512",
+        "microsoft.aspnetcore.jsonpatch.6.0.26.nupkg.sha512",
         "microsoft.aspnetcore.jsonpatch.nuspec"
       ]
     },
-    "Microsoft.AspNetCore.Mvc.NewtonsoftJson/6.0.20": {
-      "sha512": "hHZnmBwjfqPuG5060yKQjVv4TR8Y9e4Y0mlnsWpl+EbR2wiyTysuP5Jt3Tcnu5EGs7/HRDiD/NGKPNIyE2zlvw==",
+    "Microsoft.AspNetCore.Mvc.NewtonsoftJson/6.0.26": {
+      "sha512": "F25jd6fq+HtKESsyu6rLpCGsNsov5qtE2NP50fO7xILJKbO1L4017UDsyzsZal6wck948krD5yHRcvaviaaSeg==",
       "type": "package",
-      "path": "microsoft.aspnetcore.mvc.newtonsoftjson/6.0.20",
+      "path": "microsoft.aspnetcore.mvc.newtonsoftjson/6.0.26",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -111,7 +111,7 @@
         "THIRD-PARTY-NOTICES.TXT",
         "lib/net6.0/Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll",
         "lib/net6.0/Microsoft.AspNetCore.Mvc.NewtonsoftJson.xml",
-        "microsoft.aspnetcore.mvc.newtonsoftjson.6.0.20.nupkg.sha512",
+        "microsoft.aspnetcore.mvc.newtonsoftjson.6.0.26.nupkg.sha512",
         "microsoft.aspnetcore.mvc.newtonsoftjson.nuspec"
       ]
     },
@@ -235,30 +235,29 @@
   },
   "projectFileDependencyGroups": {
     "net7.0": [
-      "Microsoft.AspNetCore.Mvc.NewtonsoftJson >= 6.0.20"
+      "Microsoft.AspNetCore.Mvc.NewtonsoftJson >= 6.0.26"
     ]
   },
   "packageFolders": {
-    "/Users/patric.lee/.nuget/packages/": {}
+    "/home/runner/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/patric.lee/code/pd/github-actions/SampleClassLibrary/SampleClassLibrary.csproj",
+      "projectUniqueName": "/home/runner/work/github-actions/github-actions/SampleClassLibrary/SampleClassLibrary.csproj",
       "projectName": "SampleClassLibrary",
-      "projectPath": "/Users/patric.lee/code/pd/github-actions/SampleClassLibrary/SampleClassLibrary.csproj",
-      "packagesPath": "/Users/patric.lee/.nuget/packages/",
-      "outputPath": "/Users/patric.lee/code/pd/github-actions/SampleClassLibrary/obj/",
+      "projectPath": "/home/runner/work/github-actions/github-actions/SampleClassLibrary/SampleClassLibrary.csproj",
+      "packagesPath": "/home/runner/.nuget/packages/",
+      "outputPath": "/home/runner/work/github-actions/github-actions/SampleClassLibrary/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/patric.lee/.nuget/NuGet/NuGet.Config"
+        "/home/runner/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
-        "https://api.nuget.org/v3/index.json": {},
-        "https://artifactory.xero-support.com/api/nuget/nuget": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
@@ -278,7 +277,7 @@
         "dependencies": {
           "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
             "target": "Package",
-            "version": "[6.0.20, )"
+            "version": "[6.0.26, )"
           }
         },
         "imports": [
@@ -297,7 +296,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.100/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.101/RuntimeIdentifierGraph.json"
       }
     }
   }
