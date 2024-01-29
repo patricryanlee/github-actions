@@ -14,8 +14,7 @@ jobs:
       - name: Install dotnet-outdated-tool
         run: |
           dotnet new tool-manifest
-          dotnet tool install dotnet-outdated-tool
-          cd src
+          dotnet tool install dotnet-outdated-tool          
           dotnet restore
           dotnet outdated --version-lock Major --upgrade *.sln
         shell: bash
