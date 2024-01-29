@@ -21,7 +21,7 @@ jobs:
         shell: bash
       - name: echo "Commit changes"
         run: |
-          git checkout update-package
+          git checkout -b update-package
           git add .
           git commit -m "Update package"
         shell: bash
