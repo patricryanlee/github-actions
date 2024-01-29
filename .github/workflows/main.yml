@@ -10,8 +10,6 @@ jobs:
       - run: echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
       - name: Check out repository code
         uses: actions/checkout@v4
-        with:
-          ref: update-package
       - run: echo "💡 The ${{ github.repository }} repository has been cloned to the runner."
       - name: Install dotnet-outdated-tool
         run: |
