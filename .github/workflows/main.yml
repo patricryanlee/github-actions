@@ -10,9 +10,18 @@ jobs:
       - run: echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
       - name: Check out repository code
         uses: actions/checkout@v4
+        with:
+          ref: update-package
       - run: echo "💡 The ${{ github.repository }} repository has been cloned to the runner."
-      - run: echo "🖥️ The workflow is now ready to test your code on the runner."
-      - name: List files in the repository
+      - name: Install dotnet-outdated-tool
         run: |
-          ls ${{ github.workspace }}
-      - run: echo "🍏 This job's status is ${{ job.status }}."
+          dotnet tool install dotnet-outdated-tool
+          cd src
+          dotnet restore
+          dotnet outdated --version-lock Major --upgrade *.sln
+        shell: bash
+      - run: echo "Creating PR"
+      - name: create pull request
+        run: gh pr create -B main -H update-package --title 'Merge update-package into main' --body 'Created by Github action'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
